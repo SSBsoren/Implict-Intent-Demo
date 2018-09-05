@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+
+    <!--Camera Function-->
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="200dp"
+        android:layout_height="250dp"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/img_camera"
+            android:background="#ccc"
+            android:padding="2dp"/>
+
+    </LinearLayout>
+
+    <!--End Camera Function-->
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/Fab_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        fab:menu_labels_showAnimation="@anim/fab_slide_in_from_right"
+        fab:menu_labels_hideAnimation="@anim/fab_slide_out_to_right"
+        fab:menu_backgroundColor="@android:color/transparent"
+        fab:menu_fab_label="Floating Action Menu"
+        fab:menu_labels_showShadow="true"
+        android:layout_gravity="bottom|right"
+        fab:menu_shadowColor="#66aff198"
+        fab:menu_shadowRadius="4dp"
+        fab:menu_shadowXOffset="1dp"
+        fab:menu_shadowYOffset="4dp"
+        fab:menu_labels_singleLine="false"
+        fab:menu_labels_textColor="#f2f1f1"
+        fab:menu_labels_textSize="15sp"
+        fab:menu_openDirection="up"
+        fab:menu_labels_colorNormal="#333"
+        fab:menu_labels_colorPressed="#444"
+        fab:menu_labels_colorRipple="#66efecec"
+        fab:menu_labels_cornerRadius="3dp"
+        fab:menu_labels_ellipsize="none">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/floating_map_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            fab:fab_size="mini"
+            fab:fab_label="Map"
+            app:backgroundTint="#fff"
+            android:src="@drawable/google"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/floating_mail_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            fab:fab_size="mini"
+            fab:fab_label="Gmail"
+            android:src="@drawable/close_envelope"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/floating_phn_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            fab:fab_label="Contacts"
+            fab:fab_size="normal"
+
+            android:src="@drawable/phone_call"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/floating_tele_btn"
+            android:layout_width="4dp"
+            android:layout_height="4dp"
+            fab:fab_size="mini"
+            fab:fab_label="Dial"
+            android:layout_margin="16dp"
+           android:src="@drawable/telephone"/>
+
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/floating_camera_btn"
+            android:layout_width="4dp"
+            android:layout_height="4dp"
+            android:layout_margin="16dp"
+            fab:fab_size="mini"
+            fab:fab_label="Camera"
+            android:src="@drawable/camera"/>
+    </com.github.clans.fab.FloatingActionMenu>
+
+
+</android.support.design.widget.CoordinatorLayout >
